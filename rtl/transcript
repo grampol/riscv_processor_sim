@@ -1,0 +1,496 @@
+# Reading pref.tcl
+# vsim -gui . 
+# Start time: 22:45:32 on May 14,2023
+# ** Error (suppressible): (vsim-19) Failed to access library '' at "".
+# Invalid argument. (errno = EINVAL)
+# Error loading design
+# End time: 22:45:33 on May 14,2023, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 0
+run -all
+# No Design Loaded!
+do memory.do
+# Cannot open macro file: memory.do
+dir
+#  Volume in drive C has no label.
+#  Volume Serial Number is 3AC6-1F8C
+# 
+#  Directory of C:\ModelSim\fromstart\rtl
+# 
+# 14/05/2023  10:45 ££    <DIR>          .
+# 14/05/2023  10:45 ££    <DIR>          ..
+# 05/03/2023  02:28 ££    <DIR>          processor
+# 14/05/2023  10:47 ££    <DIR>          simulation
+# 05/03/2023  02:28 ££             2.719 sys_defs.vh
+# 14/05/2023  10:45 ££               210 transcript
+#                2 File(s)          2.929 bytes
+#                4 Dir(s)  79.667.060.736 bytes free
+cd simulation
+clear
+# invalid command name "clear"
+clc
+# invalid command name "clc"
+dir
+#  Volume in drive C has no label.
+#  Volume Serial Number is 3AC6-1F8C
+# 
+#  Directory of C:\ModelSim\fromstart\rtl\simulation
+# 
+# 14/05/2023  10:54 ££    <DIR>          .
+# 14/05/2023  10:54 ££    <DIR>          ..
+# 14/05/2023  10:54 ££    <DIR>          codegen
+# 17/03/2023  02:31 §£               563 command_tb.do
+# 06/04/2023  04:28 ££             1.929 enable.do
+# 05/03/2023  02:28 ££               218 files_rtl.f
+# 17/03/2023  02:31 §£               532 id_deb.do
+# 17/03/2023  02:31 §£               402 memory.do
+# 05/03/2023  02:28 ££             3.048 memory.sv
+# 17/03/2023  02:31 §£               687 my.do
+# 05/03/2023  02:28 ££             3.712 processor_tb.sv
+# 05/03/2023  02:28 ££               111 simulation.do
+# 14/05/2023  10:54 ££             3.118 tests.dmp
+# 05/03/2023  02:28 ££             1.125 tests.dmp.ORIGINAL
+# 14/05/2023  10:54 ££             1.116 testshex.txt
+# 05/03/2023  02:28 ££               234 testshex.txt.ORIGINAL
+#               13 File(s)         16.795 bytes
+#                3 Dir(s)  79.579.262.976 bytes free
+dir *.do
+#  Volume in drive C has no label.
+#  Volume Serial Number is 3AC6-1F8C
+# 
+#  Directory of C:\ModelSim\fromstart\rtl\simulation
+# 
+# 17/03/2023  02:31 §£               563 command_tb.do
+# 06/04/2023  04:28 ££             1.929 enable.do
+# 17/03/2023  02:31 §£               532 id_deb.do
+# 17/03/2023  02:31 §£               402 memory.do
+# 17/03/2023  02:31 §£               687 my.do
+# 05/03/2023  02:28 ££               111 simulation.do
+#                6 File(s)          4.224 bytes
+#                0 Dir(s)  79.579.262.976 bytes free
+do memory.do
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:56:09 on May 14,2023
+# vlog -reportprogress 300 -f files_rtl.f 
+# -- Compiling module if_stage
+# -- Compiling module regfile
+# -- Compiling module inst_decoder
+# -- Compiling module id_stage
+# -- Compiling module ex_stage
+# -- Compiling module alu
+# -- Compiling module mem_stage
+# -- Compiling module wb_stage
+# -- Compiling module processor
+# -- Compiling module mem
+# -- Compiling module processor_tb
+# 
+# Top level modules:
+# 	processor_tb
+# End time: 22:56:10 on May 14,2023, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vsim work.processor_tb 
+# Start time: 22:56:10 on May 14,2023
+# Loading sv_std.std
+# Loading work.processor_tb
+# Loading work.processor
+# Loading work.if_stage
+# Loading work.id_stage
+# Loading work.regfile
+# Loading work.inst_decoder
+# Loading work.ex_stage
+# Loading work.alu
+# Loading work.mem_stage
+# Loading work.wb_stage
+# Loading work.mem
+# ** Note: $stop    : processor_tb.sv(128)
+#    Time: 500005 ps  Iteration: 1  Instance: /processor_tb
+# Break in Module processor_tb at processor_tb.sv line 128
+# ** Note: $stop    : processor_tb.sv(128)
+#    Time: 500005 ps  Iteration: 1  Instance: /processor_tb
+# Break in Module processor_tb at processor_tb.sv line 128
+step -out -current
+# ** UI-Msg: (vsim-12048) Current thread #INITIAL#121 is Done.
+# 
+quit -sim
+# End time: 22:58:03 on May 14,2023, Elapsed time: 0:01:53
+# Errors: 0, Warnings: 0
+!do
+# do memory.do
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 23:02:34 on May 14,2023
+# vlog -reportprogress 300 -f files_rtl.f 
+# -- Compiling module if_stage
+# -- Compiling module regfile
+# -- Compiling module inst_decoder
+# -- Compiling module id_stage
+# -- Compiling module ex_stage
+# -- Compiling module alu
+# -- Compiling module mem_stage
+# -- Compiling module wb_stage
+# -- Compiling module processor
+# -- Compiling module mem
+# -- Compiling module processor_tb
+# 
+# Top level modules:
+# 	processor_tb
+# End time: 23:02:34 on May 14,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim work.processor_tb 
+# Start time: 23:02:34 on May 14,2023
+# Loading sv_std.std
+# Loading work.processor_tb
+# Loading work.processor
+# Loading work.if_stage
+# Loading work.id_stage
+# Loading work.regfile
+# Loading work.inst_decoder
+# Loading work.ex_stage
+# Loading work.alu
+# Loading work.mem_stage
+# Loading work.wb_stage
+# Loading work.mem
+# ** Note: $stop    : processor_tb.sv(128)
+#    Time: 500005 ps  Iteration: 1  Instance: /processor_tb
+# Break in Module processor_tb at processor_tb.sv line 128
+# ** Note: $stop    : processor_tb.sv(128)
+#    Time: 500005 ps  Iteration: 1  Instance: /processor_tb
+# Break in Module processor_tb at processor_tb.sv line 128
+do memory.do
+# End time: 23:31:19 on May 14,2023, Elapsed time: 0:28:45
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 23:31:19 on May 14,2023
+# vlog -reportprogress 300 -f files_rtl.f 
+# -- Compiling module if_stage
+# -- Compiling module regfile
+# -- Compiling module inst_decoder
+# -- Compiling module id_stage
+# -- Compiling module ex_stage
+# -- Compiling module alu
+# -- Compiling module mem_stage
+# -- Compiling module wb_stage
+# -- Compiling module processor
+# -- Compiling module mem
+# -- Compiling module processor_tb
+# 
+# Top level modules:
+# 	processor_tb
+# End time: 23:31:19 on May 14,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim work.processor_tb 
+# Start time: 23:31:19 on May 14,2023
+# Loading sv_std.std
+# Loading work.processor_tb
+# Loading work.processor
+# Loading work.if_stage
+# Loading work.id_stage
+# Loading work.regfile
+# Loading work.inst_decoder
+# Loading work.ex_stage
+# Loading work.alu
+# Loading work.mem_stage
+# Loading work.wb_stage
+# Loading work.mem
+# ** Note: $stop    : processor_tb.sv(128)
+#    Time: 500005 ps  Iteration: 1  Instance: /processor_tb
+# Break in Module processor_tb at processor_tb.sv line 128
+# ** Note: $stop    : processor_tb.sv(128)
+#    Time: 500005 ps  Iteration: 1  Instance: /processor_tb
+# Break in Module processor_tb at processor_tb.sv line 128
+!do
+# do memory.do
+# End time: 23:41:37 on May 14,2023, Elapsed time: 0:10:18
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 23:41:38 on May 14,2023
+# vlog -reportprogress 300 -f files_rtl.f 
+# -- Compiling module if_stage
+# -- Compiling module regfile
+# -- Compiling module inst_decoder
+# -- Compiling module id_stage
+# -- Compiling module ex_stage
+# -- Compiling module alu
+# -- Compiling module mem_stage
+# -- Compiling module wb_stage
+# -- Compiling module processor
+# -- Compiling module mem
+# -- Compiling module processor_tb
+# 
+# Top level modules:
+# 	processor_tb
+# End time: 23:41:38 on May 14,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim work.processor_tb 
+# Start time: 23:41:38 on May 14,2023
+# Loading sv_std.std
+# Loading work.processor_tb
+# Loading work.processor
+# Loading work.if_stage
+# Loading work.id_stage
+# Loading work.regfile
+# Loading work.inst_decoder
+# Loading work.ex_stage
+# Loading work.alu
+# Loading work.mem_stage
+# Loading work.wb_stage
+# Loading work.mem
+# ** Note: $stop    : processor_tb.sv(128)
+#    Time: 500005 ps  Iteration: 1  Instance: /processor_tb
+# Break in Module processor_tb at processor_tb.sv line 128
+# ** Note: $stop    : processor_tb.sv(128)
+#    Time: 500005 ps  Iteration: 1  Instance: /processor_tb
+# Break in Module processor_tb at processor_tb.sv line 128
+!do
+# do memory.do
+# End time: 23:45:00 on May 14,2023, Elapsed time: 0:03:22
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 23:45:00 on May 14,2023
+# vlog -reportprogress 300 -f files_rtl.f 
+# -- Compiling module if_stage
+# -- Compiling module regfile
+# -- Compiling module inst_decoder
+# -- Compiling module id_stage
+# -- Compiling module ex_stage
+# -- Compiling module alu
+# -- Compiling module mem_stage
+# -- Compiling module wb_stage
+# -- Compiling module processor
+# -- Compiling module mem
+# -- Compiling module processor_tb
+# 
+# Top level modules:
+# 	processor_tb
+# End time: 23:45:00 on May 14,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim work.processor_tb 
+# Start time: 23:45:00 on May 14,2023
+# Loading sv_std.std
+# Loading work.processor_tb
+# Loading work.processor
+# Loading work.if_stage
+# Loading work.id_stage
+# Loading work.regfile
+# Loading work.inst_decoder
+# Loading work.ex_stage
+# Loading work.alu
+# Loading work.mem_stage
+# Loading work.wb_stage
+# Loading work.mem
+# ** Note: $stop    : processor_tb.sv(128)
+#    Time: 500005 ps  Iteration: 1  Instance: /processor_tb
+# Break in Module processor_tb at processor_tb.sv line 128
+# ** Note: $stop    : processor_tb.sv(128)
+#    Time: 500005 ps  Iteration: 1  Instance: /processor_tb
+# Break in Module processor_tb at processor_tb.sv line 128
+do memory.do
+# End time: 23:47:28 on May 14,2023, Elapsed time: 0:02:28
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 23:47:28 on May 14,2023
+# vlog -reportprogress 300 -f files_rtl.f 
+# -- Compiling module if_stage
+# -- Compiling module regfile
+# -- Compiling module inst_decoder
+# -- Compiling module id_stage
+# -- Compiling module ex_stage
+# -- Compiling module alu
+# -- Compiling module mem_stage
+# -- Compiling module wb_stage
+# -- Compiling module processor
+# -- Compiling module mem
+# -- Compiling module processor_tb
+# 
+# Top level modules:
+# 	processor_tb
+# End time: 23:47:28 on May 14,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim work.processor_tb 
+# Start time: 23:47:29 on May 14,2023
+# Loading sv_std.std
+# Loading work.processor_tb
+# Loading work.processor
+# Loading work.if_stage
+# Loading work.id_stage
+# Loading work.regfile
+# Loading work.inst_decoder
+# Loading work.ex_stage
+# Loading work.alu
+# Loading work.mem_stage
+# Loading work.wb_stage
+# Loading work.mem
+# ** Note: $stop    : processor_tb.sv(128)
+#    Time: 500005 ps  Iteration: 1  Instance: /processor_tb
+# Break in Module processor_tb at processor_tb.sv line 128
+# ** Note: $stop    : processor_tb.sv(128)
+#    Time: 500005 ps  Iteration: 1  Instance: /processor_tb
+# Break in Module processor_tb at processor_tb.sv line 128
+do memory.do
+# End time: 23:48:46 on May 14,2023, Elapsed time: 0:01:17
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 23:48:46 on May 14,2023
+# vlog -reportprogress 300 -f files_rtl.f 
+# -- Compiling module if_stage
+# -- Compiling module regfile
+# -- Compiling module inst_decoder
+# -- Compiling module id_stage
+# -- Compiling module ex_stage
+# -- Compiling module alu
+# -- Compiling module mem_stage
+# -- Compiling module wb_stage
+# -- Compiling module processor
+# -- Compiling module mem
+# -- Compiling module processor_tb
+# 
+# Top level modules:
+# 	processor_tb
+# End time: 23:48:46 on May 14,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim work.processor_tb 
+# Start time: 23:48:46 on May 14,2023
+# Loading sv_std.std
+# Loading work.processor_tb
+# Loading work.processor
+# Loading work.if_stage
+# Loading work.id_stage
+# Loading work.regfile
+# Loading work.inst_decoder
+# Loading work.ex_stage
+# Loading work.alu
+# Loading work.mem_stage
+# Loading work.wb_stage
+# Loading work.mem
+# ** Note: $stop    : processor_tb.sv(128)
+#    Time: 500005 ps  Iteration: 1  Instance: /processor_tb
+# Break in Module processor_tb at processor_tb.sv line 128
+# ** Note: $stop    : processor_tb.sv(128)
+#    Time: 500005 ps  Iteration: 1  Instance: /processor_tb
+# Break in Module processor_tb at processor_tb.sv line 128
+!do
+# do memory.do
+# End time: 23:51:19 on May 14,2023, Elapsed time: 0:02:33
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 23:51:19 on May 14,2023
+# vlog -reportprogress 300 -f files_rtl.f 
+# -- Compiling module if_stage
+# -- Compiling module regfile
+# -- Compiling module inst_decoder
+# -- Compiling module id_stage
+# -- Compiling module ex_stage
+# -- Compiling module alu
+# -- Compiling module mem_stage
+# -- Compiling module wb_stage
+# -- Compiling module processor
+# -- Compiling module mem
+# -- Compiling module processor_tb
+# 
+# Top level modules:
+# 	processor_tb
+# End time: 23:51:19 on May 14,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim work.processor_tb 
+# Start time: 23:51:20 on May 14,2023
+# Loading sv_std.std
+# Loading work.processor_tb
+# Loading work.processor
+# Loading work.if_stage
+# Loading work.id_stage
+# Loading work.regfile
+# Loading work.inst_decoder
+# Loading work.ex_stage
+# Loading work.alu
+# Loading work.mem_stage
+# Loading work.wb_stage
+# Loading work.mem
+# ** Note: $stop    : processor_tb.sv(128)
+#    Time: 500005 ps  Iteration: 1  Instance: /processor_tb
+# Break in Module processor_tb at processor_tb.sv line 128
+# ** Note: $stop    : processor_tb.sv(128)
+#    Time: 500005 ps  Iteration: 1  Instance: /processor_tb
+# Break in Module processor_tb at processor_tb.sv line 128
+do memory.do
+# End time: 23:52:19 on May 14,2023, Elapsed time: 0:00:59
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 23:52:19 on May 14,2023
+# vlog -reportprogress 300 -f files_rtl.f 
+# -- Compiling module if_stage
+# -- Compiling module regfile
+# -- Compiling module inst_decoder
+# -- Compiling module id_stage
+# -- Compiling module ex_stage
+# -- Compiling module alu
+# -- Compiling module mem_stage
+# -- Compiling module wb_stage
+# -- Compiling module processor
+# -- Compiling module mem
+# -- Compiling module processor_tb
+# 
+# Top level modules:
+# 	processor_tb
+# End time: 23:52:19 on May 14,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim work.processor_tb 
+# Start time: 23:52:19 on May 14,2023
+# Loading sv_std.std
+# Loading work.processor_tb
+# Loading work.processor
+# Loading work.if_stage
+# Loading work.id_stage
+# Loading work.regfile
+# Loading work.inst_decoder
+# Loading work.ex_stage
+# Loading work.alu
+# Loading work.mem_stage
+# Loading work.wb_stage
+# Loading work.mem
+# ** Note: $stop    : processor_tb.sv(128)
+#    Time: 500005 ps  Iteration: 1  Instance: /processor_tb
+# Break in Module processor_tb at processor_tb.sv line 128
+# ** Note: $stop    : processor_tb.sv(128)
+#    Time: 500005 ps  Iteration: 1  Instance: /processor_tb
+# Break in Module processor_tb at processor_tb.sv line 128
+!do
+# do memory.do
+# End time: 23:54:01 on May 14,2023, Elapsed time: 0:01:42
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 23:54:01 on May 14,2023
+# vlog -reportprogress 300 -f files_rtl.f 
+# -- Compiling module if_stage
+# -- Compiling module regfile
+# -- Compiling module inst_decoder
+# -- Compiling module id_stage
+# -- Compiling module ex_stage
+# -- Compiling module alu
+# -- Compiling module mem_stage
+# -- Compiling module wb_stage
+# -- Compiling module processor
+# -- Compiling module mem
+# -- Compiling module processor_tb
+# 
+# Top level modules:
+# 	processor_tb
+# End time: 23:54:01 on May 14,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim work.processor_tb 
+# Start time: 23:54:01 on May 14,2023
+# Loading sv_std.std
+# Loading work.processor_tb
+# Loading work.processor
+# Loading work.if_stage
+# Loading work.id_stage
+# Loading work.regfile
+# Loading work.inst_decoder
+# Loading work.ex_stage
+# Loading work.alu
+# Loading work.mem_stage
+# Loading work.wb_stage
+# Loading work.mem
+# ** Note: $stop    : processor_tb.sv(128)
+#    Time: 500005 ps  Iteration: 1  Instance: /processor_tb
+# Break in Module processor_tb at processor_tb.sv line 128
+# ** Note: $stop    : processor_tb.sv(128)
+#    Time: 500005 ps  Iteration: 1  Instance: /processor_tb
+# Break in Module processor_tb at processor_tb.sv line 128
